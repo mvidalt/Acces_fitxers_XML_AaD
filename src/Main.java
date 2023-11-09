@@ -275,7 +275,6 @@ public class Main {
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
             Transformer transformer = transformerFactory.newTransformer();
 
-            // Establece el número de espacios para la indentación (en este caso, 4 espacios por nivel)
             transformer.setOutputProperty(OutputKeys.INDENT, "yes");
             transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "4");
             DOMSource source = new DOMSource(doc);
@@ -321,10 +320,6 @@ public class Main {
         }
         return false;
     }
-
-
-
-
 
 }
 
